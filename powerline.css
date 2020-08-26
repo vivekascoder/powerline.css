@@ -4,19 +4,7 @@ Author: @vivekascoder (Github/Facebook/Instagram/Gmail)
 Email: vivekascoder@gmail.com
 Website: https://github.com/vivekascoder/powerline.css
 */
-:root{
-    --component-0-color: #bd93f9;
-    --component-1-color: #8be9fd;
-    --component-2-color: #6272a4;
-    --component-3-color: #50fa7b;
-    --component-4-color: #ffb86c;
-    --component-5-color: #ff79c6;
-    --component-6-color: yellow;
-    --component-7-color: #ff5555;
-    --component-8-color: #f8f8f2;
-    --component-9-color: royalblue;
-}
-/* #8be9fd  #ff5555 */
+
 /* Font: FiraCode */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
 /* Dealing with the Powerline */
@@ -35,54 +23,25 @@ Website: https://github.com/vivekascoder/powerline.css
     font-size: 0.75rem;
     font-weight: 500;
     position: relative;
-    padding: 3px 1rem;
+    padding: 3px 1.25rem;
+    margin-right: -14px;
     cursor: pointer;
+    clip-path: polygon(0% 0%, calc(100% - 14px) 0%, 100% 50%, calc(100% - 14px) 100%, 100% 100%, 0% 100%, 14px 50%);
 }
-.powerline__component:nth-child(1), .powerline__component:nth-child(1)::after{
-    background-color: var(--component-0-color);
-    z-index: 10;
-}
-.powerline__component:nth-child(2), .powerline__component:nth-child(2)::after{
-    background-color: var(--component-1-color);
-    z-index: 9;
-}
-.powerline__component:nth-child(3), .powerline__component:nth-child(3)::after{
-    background-color: var(--component-2-color);
-    z-index: 8;
-}
-.powerline__component:nth-child(4), .powerline__component:nth-child(4)::after{
-    background-color: var(--component-3-color);
-    z-index: 7;
-}
-.powerline__component:nth-child(5), .powerline__component:nth-child(5)::after{
-    background-color: var(--component-4-color);
-    z-index: 6;
-}
-.powerline__component:nth-child(6), .powerline__component:nth-child(6)::after{
-    background-color: var(--component-5-color);
-    z-index: 5;
-}
-.powerline__component:nth-child(7), .powerline__component:nth-child(7)::after{
-    background-color: var(--component-6-color);
-    z-index: 4;
-}
-.powerline__component:nth-child(8), .powerline__component:nth-child(8)::after{
-    background-color: var(--component-7-color);
-    z-index: 3;
-}
-.powerline__component:nth-child(9), .powerline__component:nth-child(9)::after{
-    background-color: var(--component-8-color);
-    z-index: 2;
-}
-.powerline__component:nth-child(10), .powerline__component:nth-child(10)::after{
-    background-color: var(--component-9-color);
-    z-index: 1;
-}
-.powerline__component::after{
-    content: '';
-    height: 100%;
-    width: 20px;
-    clip-path: polygon(0% 0%, 70% 50%, 0% 100%);
-    position: absolute;
-    transform: translate(0.95rem, -3px);
-}
+
+/* Background */
+.dracula-background{background-color: #282a36;}
+.dracula-currentline{background-color: #44475a;}
+.dracula-foreground{background-color: #f8f8f2;}
+.dracula-comment{background-color: #6272a4;}
+.dracula-cyan{background-color: #8be9fd;}
+.dracula-green{background-color: #50fa7b;}
+.dracula-orange{background-color: #ffb86c;}
+.dracula-pink{background-color: #ff79c6;}
+.dracula-purple{background-color: #bd93f9;}
+.dracula-red{background-color: #ff5555;}
+.dracula-yellow{background-color: #f1fa8c;}
+
+/* Foreground */
+.dracula-text-light{color: #f8f8f2;}
+.dracula-text-dark{color: #282a36;}

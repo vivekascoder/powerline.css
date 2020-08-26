@@ -14,38 +14,34 @@
 ```html
 ...
 <div class="powerline">
-    <span class="powerline__component">🐧 Home</span>
-    <span class="powerline__component">Payment</span>
-    <span class="powerline__component">Verification</span>
-    <span class="powerline__component">~</span>
+    <span class="powerline__component ...">🐧 Home</span>
+    <span class="powerline__component ...">Payment</span>
+    <span class="powerline__component ...">Verification</span>
+    <span class="powerline__component ...">~</span>
 </div>
 ...
 ```
+- Here `...` needs to be replace with the powerline dracula colors.
 
 ## How to change colors of component??
-- Open `powerline.css`.
-- And change the component color CSS variables, as indicated below:
+- Choose any of the following classes
 
-```css
-...
-:root{
-    --component-0-color: #bd93f9;
-    --component-1-color: #8be9fd;
-    --component-2-color: #6272a4;
-    --component-3-color: #50fa7b;
-    --component-4-color: #ffb86c;
-    --component-5-color: #ff79c6;
-    --component-6-color: yellow;
-    --component-7-color: #ff5555;
-    --component-8-color: #f8f8f2;
-    --component-9-color: royalblue;
-}
-...
 ```
+dracula-background
+dracula-currentline
+dracula-foreground
+dracula-comment
+dracula-cyan
+dracula-green
+dracula-orange
+dracula-pink
+dracula-purple
+dracula-red
+dracula-yellow
+```
+- You can change the text color by adding `dracula-text-light` and `dracula-text-dark` classes.
 
 ## Total Components??
-- There are total 10 components well in the next version we'll create it a bit dynamic to make as much as you want.
-- The screenshot below represents all the 4 colors.
+- As many as you want
 
-![Poerline.css](assets/screenshot-2.png)
 > Thanks for visiting this page, {\*_\*}/
